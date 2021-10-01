@@ -1,0 +1,130 @@
+/* contact form styling */
+body{
+    display: flex;
+    justify-content: center;
+}
+.contact_page_parent{
+	display: flex;
+}
+
+@media screen and (max-width:980px){
+	.contact_page_parent, 
+	.contact_page_three_column{
+		display:flex;
+		flex-direction:column;
+	}
+	.contact_page_parent .one_half, 
+	.contact_page_three_column .one_third {
+		width:100%;
+	}
+}
+
+.wpcf7-form {
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+}
+.parent {
+	display:flex;
+	width:60%;
+	flex-direction:column;
+	align-items:center;
+	border: 1px solid #2d528e;
+	margin:0px 0px;
+	padding:30px 30px;
+	box-shadow: 0px 0px 1px 0px #2d528e;
+}
+
+.parent h1{
+	margin-bottom: 25px;
+	padding: 0;
+	font-weight: 600;
+}
+
+.parent .contact_flex_box{
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.contact_flex_box .left_section{
+	padding:0px 20px;
+	display:flex;
+	width:49%;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.contact_flex_box .right_section{
+	padding:0px 20px;
+	width:49%;
+	display:flex;
+}
+.contact_flex_box .right_section>label,
+.contact_flex_box .right_section>label>span {
+	width:100%;
+}
+.parent input, 
+.parent textarea{
+	padding:10px;
+	border: 1px solid #b2bfd5;
+	width:100%;
+	border-radius: 5px;
+}
+.parent textarea{
+	height: 100%;
+}
+.parent p {
+	margin: 20px auto;
+}
+.parent .captcha {
+	margin: 40px 0 10px 0!important;
+	padding: 0;
+}
+.parent .captcha .cf7ic_instructions {
+	margin-bottom: 10px;
+}
+.parent .captcha .captcha-image {
+	border: none;
+}
+.submit_btn {
+	margin-top: 50px !important;
+}
+.parent .wpcf7-submit{
+	background-color: transparent;
+	color: #5c6881;
+	cursor: pointer;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+	border: 1px solid #5c6881;
+	transition: 0.3s ease-in-out;
+}
+.parent .wpcf7-submit:hover {
+	background-color: #5c6881;
+	color: #fff;
+}
+
+.parent p .ajax-loader{
+	display:none;
+}
+
+/* Media Queries  */
+@media screen and (max-width:670px){
+	.parent {
+		width:100%;
+	}
+	.parent .contact_flex_box{
+		display:flex;
+		flex-direction:column;
+	}
+	.contact_flex_box .right_section, .contact_flex_box .left_section{
+		width:100%;
+		padding:0px 0px;
+	}
+	.contact_flex_box .right_section{
+		margin-top:20px;
+	}
+	.parent h1 {
+		font-size:30px;
+	}
+}
